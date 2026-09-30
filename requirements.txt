@@ -1,0 +1,21 @@
+# Core
+streamlit>=1.32,<2
+litellm>=1.91.4
+pydantic>=2.6,<3
+python-dotenv>=1.0
+requests>=2.31
+
+# Diagram generation
+lxml>=4.9
+
+# Auth
+bcrypt>=4.1
+
+# File handling (image / PDF uploads)
+pillow>=10.1
+pdfplumber>=0.10
+pytesseract>=0.3.10
+
+# NOTE: no provider SDKs are needed - LiteLLM talks to Groq, Gemini, Anthropic
+# and Ollama over plain HTTP. The anthropic / groq / google-generativeai
+# packages were unused imports and have been dropped.
